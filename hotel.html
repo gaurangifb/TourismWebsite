@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel BOOKING form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo"> <h1 style="font-size: 20px;"> MUMBAI </h1> </div>
+        <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="herit.html">Heritage</a>
+          <a href="hotel.html">Hotel Booking</a>
+          <a href="gall.html">Gallery</a>
+        </div>
+    </nav>
+
+    <div class="heading">
+        <h1>HOTEL RESERVATION FORM</h1>
+    </div>
+
+    <div class="dis">
+    <form>
+
+        <table>
+            <tr><td><h2>PERSONAL DETAILS</h2></td></tr>
+
+            <tr>
+                <td><label for="fName">First Name: </label>   <!--for and input id should be same--></td>
+                <td><input type="text" name="fName" id="fName"> <br/> <br></td>
+            </tr>
+
+            <tr>
+                <td><label for="lName">Last Name: </label></td>
+                <td><input type="text" name="lName" id="lName"> <br/> <br></td>
+            </tr>
+
+            <tr>
+                <td><label>Gender: </label></td>
+                <td>
+                    <input type="radio" name="gender" id="female" value="Female"> 
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="male" value="Male"> 
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="others" value="Others"> 
+                    <label for="others">Others</label> <br> <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="address">Address: </label></td>
+                <td>
+                    <input type="text" name="address" id="address1" placeholder="Street Address"> 
+                    <br> <br>
+                    <input type="text" name="address" id="address2" placeholder="Street Address2"> 
+                    <br> <br>
+                    <input type="text" name="address" id="address3" placeholder="City"> 
+                    <br> <br>
+                    <input type="text" name="address" id="address4" placeholder="State"> 
+                    <br> <br>
+                    <input type="text" name="address" id="address5" placeholder="Zip/Postal Code"> 
+                    <br> <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="num">Phone Number: </label></td>
+                <td><input type="number" name="number" id="num"> <br/> <br></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email: </label></td>
+                <td><input type="email" name="email" id="email"> <br/>  <br></td>
+            </tr>
+
+            <tr>
+                <td><label for="date">Arrival Date: </label></td>
+                <td><input type="date" id="date" name="arrivalDate"><br> <br></td>
+            </tr>
+
+            <tr>
+                <td><label for="date">Departure Date: </label></td>
+                <td><input type="date" id="date" name="departureDate"><br> <br></td>
+            </tr>
+
+            <tr>
+                <td><label for="numAdults">Number of Adults: </label></td>
+                <td><input type="number" name="numAdults" id="numAdults"> <br/> <br></td>
+            </tr>
+
+            <tr>
+                <td><label for="numKids">Number of Kids: </label></td>
+                <td><input type="number" name="numKids" id="numKids"> <br/> <br></td>
+            </tr>
+
+            <tr>
+                <td><label for="room">Select Type of Room: </label></td>
+                <td>
+                    <select name="room" id="room">
+                        <option value="del">Deluxe Room</option>
+                        <option value="bud">Budget Room</option>
+                        <option value="eco">Economy Room</option>
+                        <option value="pre">Premium Room</option>
+                    </select> <br> <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="sel">Select: </label><br></td>
+                <td>
+                    <input type="checkbox" id="break" name="break" value="break">
+                    <label for="break">Breakfast Included</label><br>
+                    <input type="checkbox" id="breakLun" name="breakLun" value="breakLun">
+                    <label for="breakLun">Breakfast & Lunch/Dinner Included</label><br>
+                    <input type="checkbox" id="all" name="all" value="all">
+                    <label for="all">All Meals Included</label><br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="reset" value="Reset"></td>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+        <!-----for and input id should be same in order to focus text box on that particular input-->
+        <!---name attribute is for sending the data in url after clicking on submit-->
+        </form>
+    </div>
+
+    <footer>
+        <p>Mumbai<br></p>
+        <p>Copyright @Tourism</p>
+    </footer>
+</body>
+</html>
